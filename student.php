@@ -57,7 +57,7 @@ require('database_connection.php');
     <h6 class="card-subtitile fs-5">Section A</h6>
     <p class="card-subtitle ">Internet Programming(Sessional)</p>
     </div>
-    <a href="perform.php" class="stretched-link"></a>
+    <a href="perform_s.php" class="stretched-link"></a>
   </div>
 </div>
     

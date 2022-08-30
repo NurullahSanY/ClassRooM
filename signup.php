@@ -16,6 +16,13 @@ if(isset($_POST['btn']) && empty($_POST['email'])==false){
  }
  else
  $_SESSION['status'] = "Please give valid Email";
+
+ if (filter_var($email,FILTER_VALIDATE_EMAIL)== true) {
+    $sql =  "INSERT INTO logininfo(Name,Email,Password,user_type) VALUES('$uname','$email','$password','$userType')" ;
+    mysqli_query($conn,$sql);
+ }
+ else
+ $_SESSION['status'] = "Please give valid Email";
 }
 ?>
 
@@ -75,7 +82,7 @@ if(isset($_SESSION['status'])){
 <input type="password" name="password" placeholder="Enter password" required>
 
 <label for="" >Select Profession</label>
-<select name="userType" id="">
+<select name="userType" id="" required>
 <option value="" selected>Choose</option>
 <option value="teacher">Teacher</option>
 <option value="student">Student</option>

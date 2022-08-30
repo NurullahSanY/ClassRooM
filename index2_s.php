@@ -98,7 +98,7 @@ display: flex;
 
     <form action="" method="POST">
     <a href="index.php"><img src="photos/home.png"  class="logo" alt=""></a>
-    <a href="perform.php"><img src="photos/arrow (2).png"  class="logo" alt=""></a>
+    <a href="perform_s.php"><img src="photos/arrow (2).png"  class="logo" alt=""></a>
    <button class="btn " type="submit" name="plog"><img src="photos/check-out.png" alt=""></button>
     </form>
    

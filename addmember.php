@@ -79,7 +79,7 @@ if(isset($_GET['qname']) && isset($_GET['qmail'])){
 
                 <div class=" card-header">
                     <form action="" method="GET">
-                        <h1 class=" text-center text-light fw-bold text-uppercase bg-primary">Student Addition</h1>
+                        <h1 class=" text-center text-light fw-bold text-uppercase bg-primary">Student Enrollment</h1>
 
                         <div class="input-group mb-3">
                             <span class=" input-group-text mt-4 border border-primary" style="height: 37px;">Search With Email</span>
@@ -110,7 +110,7 @@ if(isset($_GET['qname']) && isset($_GET['qmail'])){
 
                                 if (isset($_GET['search'])) {
                                     $filtervalues = $_GET['search'];
-                                    $query = "SELECT * FROM logininfo WHERE CONCAT(Email) LIKE '%$filtervalues%' ";
+                                    $query = "SELECT * FROM logininfo WHERE CONCAT(Email,Name) LIKE '%$filtervalues%' ";
                                     $query_run = mysqli_query($conn, $query);
 
                                     //$nums = mysqli_num_rows($query_run);
@@ -152,7 +152,7 @@ if(isset($_GET['qname']) && isset($_GET['qmail'])){
     <div class="modal-content">
 
       <div class="modal-header d-flex justify-content-center ">
-        <h2 class="modal-title  text-success" id="">Class Room Member </h2>
+        <h2 class="modal-title  text-primary" id="">Class Room Member </h2>
 
       </div>
 

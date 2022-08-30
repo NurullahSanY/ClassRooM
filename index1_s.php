@@ -46,7 +46,7 @@ if(isset($_POST['plog'])){
 
     <form action="" method="POST">
     <a href="index.php" class="me-2"><img src="photos/home.png"  class="logo" alt=""></a>
-    <a href="perform.php"><img src="photos/arrow (2).png"  class="logo" alt=""></a>
+    <a href="perform_s.php"><img src="photos/arrow (2).png"  class="logo" alt=""></a>
    <button class="btn " type="submit" name="plog"><img src="photos/check-out.png" alt=""></button>
     </form>
    
@@ -69,7 +69,7 @@ if(isset($_POST['plog'])){
     <div class="row justify-content-center mb-2 ">
         <div class="col-lg-10 bg-light rounded mt-2">
          <h4 class="text-center p-2 fs-2 fw-bold"> Post Announcement </h4>
-         <form action="index1.php" method="POST" class="p-2">
+         <form action="index1_s.php" method="POST" class="p-2">
             <input type="hidden" name="id" value="<?=$u_id; ?>" >
             <div class="form-group">
             <input type="text" name="name" class="form-control rounded" placeholder= "Enter your name" required hidden value="<?=$u_name = $_SESSION['name']  ;?>">
@@ -105,7 +105,7 @@ if(isset($_POST['plog'])){
 
             <div class="float-right pe-4"> 
               <a href="action.php?del=<?=$row['id']?>" class="text-danger mr-2" onclick="return confirm('Do your want to delete this post?');" title="Delete"> <i class="fas fa-trash"> </i> </a>
-              <a href="index1.php?edit=<?=$row['id']?>" class="text-success" title="Edit"><i class="fas fa-edit"> </i> </a>
+              <a href="index1_s.php?edit=<?=$row['id']?>" class="text-success" title="Edit"><i class="fas fa-edit"> </i> </a>
               </div>
         
         </div> 

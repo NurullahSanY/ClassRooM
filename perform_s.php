@@ -40,7 +40,7 @@ $(document).ready(function () {
     <form action="" method="POST">
      <a class="" id="dropdownMenuButton1" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="photos/people.png"  class="logo" alt=""></a> 
     <a href="index.php"><img src="photos/home.png"  class="logo" alt=""></a>
-    <a href="teacher.php"><img src="photos/arrow (2).png"  class="logo" alt=""></a>
+    <a href="student.php"><img src="photos/arrow (2).png"  class="logo" alt=""></a>
    <button class="btn " type="submit" name="plog"><img src="photos/check-out.png" alt=""></button>
     </form>
    
@@ -59,12 +59,12 @@ $(document).ready(function () {
 
 <div class=" d-flex justify-content-center align-items-center " style="height: 75vh; margin-bottom: -20px;">
 
-<form action="index1.php" method="POST">
+<form action="index1_s.php" method="POST">
 <div class="card rounded shadow-lg m-3 hoverstyle" style="width: 18rem;">
   <img src="photos/announcement.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title text-center">ANNOUNCEMENT</h4>
-    <a href="index1.php" name="btnvalue" class=" stretched-link" ></a>
+    <a href="index1_s.php" name="btnvalue" class=" stretched-link" ></a>
   </div>
 </div>
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
   <img src="photos/discuss3.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title text-center">DISCUSSION</h4>
-    <a href="index2.php" class="stretched-link"></a>
+    <a href="index2_s.php" class="stretched-link"></a>
   </div>
 </div>
 
@@ -83,14 +83,14 @@ $(document).ready(function () {
   <img src="photos/file share.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title text-center">MATERIALS</h4>
-    <a href="upload.php" class="stretched-link"></a>
+    <a href="upload_s.php" class="stretched-link"></a>
   </div>
 </div>
 
 </div>
 
 <div class=" d-flex justify-content-center">
-<a class="btn btn-outline-primary m-auto col-6 fs-3 fw-bolder" href="addmember.php" >Enrollment</a>
+ <!-- <a class="btn btn-outline-primary m-auto col-6 fs-3 fw-bolder" href="addmember.php" >Enrollment</a>  -->
 </div>
 
 
@@ -140,7 +140,6 @@ $(document).ready(function () {
   }
 
   ?>
-
    
   </tbody>
 </table>

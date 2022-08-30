@@ -24,10 +24,10 @@ if(isset($_POST['login'])){
     if($userType == "student"){
         //header("location: student.php");
         echo "<script language=Javascript>document.location.href='student.php'</script>";
-        echo "<script language=Javascript>document.location.href='perform.php'</script>";
-        echo "<script language=Javascript>document.location.href='index1.php'</script>";
-        echo "<script language=Javascript>document.location.href='index2.php'</script>";
-        echo "<script language=Javascript>document.location.href='upload.php'</script>";
+        echo "<script language=Javascript>document.location.href='perform_s.php'</script>";
+        echo "<script language=Javascript>document.location.href='index1_s.php'</script>";
+        echo "<script language=Javascript>document.location.href='index2_s.php'</script>";
+        echo "<script language=Javascript>document.location.href='upload_s.php'</script>";
     }
    else if($userType == "teacher"){
         //header("location: teacher.php");
